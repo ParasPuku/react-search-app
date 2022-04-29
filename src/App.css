@@ -2,19 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #00349b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +13,52 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.SearchBox {
+  width: 300px;
+  height: 30px;
+  padding: 5px 10px;
+  letter-spacing: 1.7px;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SearchBox:focus {
+  outline: 0;
+}
+
+.CommentList {
+  list-style-type: none;
+  font-size: 16px;
+  border-top: 1px solid #000000;
+  padding: 3px 10px;
+}
+
+ul.comment {
+  background: #ffffff;
+  color: #000000;
+  padding: 0;
+  margin: 0 20px 0 0;
+  width: 300px;
+}
+
+.Search-Icon {
+  position: relative;
+  top: 12px;
+  right: 35px;
+  color: #ae0000;
+}
+
+.SearchArea {
+  display: flex;
+}
+
+ul.comment.setScrollHeight {
+  overflow-y: scroll;
+  height: 200px;
+}
+
+h1.title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
