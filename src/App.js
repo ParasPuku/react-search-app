@@ -18,7 +18,7 @@ function App() {
         setScroll("");
       }
     }
-  }, [filteredComment]);
+  }, [filteredComment, clearInputBox]);
 
   const handleInputChange = (event) => {
     const searchWord = event.target.value;
